@@ -242,8 +242,6 @@ body {
   background: #fff;
   width: 100%;
   padding: 15px;
-  position: absolute;
-  bottom: 0px;
   border-top: 1px solid #e6e6e6;
   text-align: center;
 }
@@ -308,4 +306,53 @@ body {
 }
 .message__title span {
   color: #999;
+}
+
+.centered-form {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+}
+
+.centered-form_form {
+  background-color: #fff;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  padding: 20px;
+  width: 300px;
+}
+
+.form-field {
+  margin-bottom: 15px;
+}
+
+.form-field label {
+  display: block;
+  font-size: 14px;
+  margin-bottom: 5px;
+  color: #333;
+}
+
+.form-field input[type="text"] {
+  width: 100%;
+  padding: 8px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+.form-field button {
+  background-color: #007bff;
+  border: none;
+  border-radius: 4px;
+  color: #fff;
+  cursor: pointer;
+  font-size: 16px;
+  padding: 10px 20px;
+  width: 100%;
+  transition: background-color 0.3s ease;
+}
+
+.form-field button:hover {
+  background-color: #0056b3;
 }
