@@ -18,29 +18,20 @@ class Users {
   }
 
   getUserList(room) {
-    let users = this.users.filter((user) => {
-      user.room === room;
-    });
-    let namesAray = users.map((user) => {
-      user.name;
-    });
-
-    return namesAray;
+    let users = this.users.filter((user) => user.room === room);
+    let namesArray = users.map((user) => user.name);
+    return namesArray;
   }
 
   getUser(id) {
-    return this.users.filter((user) => {
-      user.id === id;
-    })[0];
+    return this.users.filter((user) => user.id === id)[0];
   }
 
   removeUser(id) {
     let user = this.getUser(id);
 
     if (user) {
-      this.users = this.users.filter((user) => {
-        user.id !== id;
-      });
+      this.users = this.users.filter((user) => user.id !== id);
     }
     return user;
   }
